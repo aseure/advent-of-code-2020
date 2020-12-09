@@ -7,9 +7,6 @@ all: $(EXECUTABLES)
 	ghc -O2 -o $@ $<
 
 clean:
-	rm -f *.{hi,o}
-
-distclean: clean
-	rm -f *.exe
+	rm -f *.{hi,o,exe}
 
 .PHONY: all clean distclean
